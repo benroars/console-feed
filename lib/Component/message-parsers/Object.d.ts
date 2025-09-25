@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Theme } from "../../definitions/Component";
-import type { Options } from "linkifyjs";
+import type { Opts } from "linkifyjs";
 import { Message } from "../../definitions/Component";
 interface Props {
   log: Message;
   quoted: boolean;
   theme?: Theme;
-  linkifyOptions?: Options;
+  linkifyOptions?: Opts;
 }
 declare class ObjectTree extends React.PureComponent<Props, any> {
   render(): JSX.Element[];

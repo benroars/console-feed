@@ -1,5 +1,5 @@
-import * as React from 'react'
 import { shallow } from 'enzyme'
+import * as React from 'react'
 
 import Console from '..'
 
@@ -123,7 +123,7 @@ it('linkify object', () => {
   )
 
   expect(result.html()).toContain(
-    '<a href="https://example.com" class="linkified" target="_blank">https://example.com</a>'
+    '<a href="https://example.com">https://example.com</a>'
   )
 })
 
@@ -144,7 +144,7 @@ it('linkify object and pass options', () => {
   )
 
   expect(result.html()).toContain(
-    '<a href="https://example.com" class="linkified" target="_blank" rel="nofollow">https://example.com</a>'
+    '<a href="https://example.com" rel="nofollow">https://example.com</a>'
   )
 })
 

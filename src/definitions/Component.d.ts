@@ -1,8 +1,8 @@
+import type { Opts } from 'linkifyjs'
+import { ComponentOverrides } from './ComponentOverrides'
+import { Methods } from './Methods'
 import { Payload } from './Payload'
 import { Styles } from './Styles'
-import { Methods } from './Methods'
-import type { Options } from 'linkifyjs'
-import { ComponentOverrides } from './ComponentOverrides'
 
 export type Variants = 'light' | 'dark'
 
@@ -28,12 +28,12 @@ export interface Props {
   searchKeywords?: string
   logFilter?: Function
   logGrouping?: Boolean
-  linkifyOptions?: Options
+  linkifyOptions?: Opts
   components?: ComponentOverrides
 }
 
 export interface MessageProps {
   log: Message
-  linkifyOptions?: Options
+  linkifyOptions?: Opts
   components?: ComponentOverrides
 }
